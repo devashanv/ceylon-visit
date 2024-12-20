@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
@@ -65,7 +66,7 @@ function NavBar() {
                         hover:cursor-pointer
                         hover:rounded-lg
                         lg:px-3">
-                        <a href="#home">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li className="py-2
                         pl-5
@@ -74,7 +75,7 @@ function NavBar() {
                         hover:cursor-pointer
                         hover:rounded-lg
                         lg:px-3">
-                        <a href="#services">Services</a>
+                        <Link to="/services">Services</Link>
                     </li>
                     <li className="py-2
                         pl-5
@@ -83,7 +84,7 @@ function NavBar() {
                         hover:cursor-pointer
                         hover:rounded-lg
                         lg:px-3">
-                        <a href="#about">About</a>
+                        <Link to="/about">About</Link>
                     </li>
                     <li className="py-2
                         pl-5
@@ -92,7 +93,7 @@ function NavBar() {
                         hover:cursor-pointer
                         hover:rounded-lg
                         lg:px-3">
-                        <a href="#updates">Updates</a>
+                        <Link to="/updates">Updates</Link>
                     </li>
                     <li className="py-2
                         pl-5
@@ -101,7 +102,7 @@ function NavBar() {
                         hover:cursor-pointer
                         hover:rounded-lg
                         lg:px-3">
-                        <a href="#contact">Contact</a>
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
             </div>
@@ -167,7 +168,7 @@ function NavBar() {
                             hover:bg-ternary/[0.3]
                             hover:cursor-pointer
                             hover:rounded-lg">
-                            <a href="#home">Home</a>
+                            <Link to="/" className="link"></Link>
                         </li>
                         <li className="py-2
                             pl-5
