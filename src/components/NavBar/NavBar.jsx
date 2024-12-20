@@ -116,10 +116,13 @@ function NavBar() {
                     bg-primary
                     rounded-lg
                     text-secondary
-                    text-sm
-                    py-2
+                    text-[10px]
+                    py-1
+                    md:py-2
                     md:w-full
-                    lg:w-full">
+                    lg:py-2
+                    lg:w-full
+                    lg:text-base">
                     Sign In
                 </button>
             </div>
@@ -148,7 +151,7 @@ function NavBar() {
             {/* toggle menu */}
             {isMenuToggle ? (
                 <div className="absolute 
-                bg-slate-100
+                bg-backgbround
                 shadow 
                 w-1/2
                 mt-14
@@ -168,7 +171,7 @@ function NavBar() {
                             hover:bg-ternary/[0.3]
                             hover:cursor-pointer
                             hover:rounded-lg">
-                            <Link to="/" className="link"></Link>
+                            <Link to="/">Home</Link>
                         </li>
                         <li className="py-2
                             pl-5
@@ -176,7 +179,7 @@ function NavBar() {
                             hover:bg-ternary/[0.3]
                             hover:cursor-pointer
                             hover:rounded-lg">
-                            <a href="#services">Services</a>
+                            <Link to="/services">Services</Link>
                         </li>
                         <li className="py-2
                             pl-5
@@ -184,7 +187,7 @@ function NavBar() {
                             hover:bg-ternary/[0.3]
                             hover:cursor-pointer
                             hover:rounded-lg">
-                            <a href="#about">About</a>
+                            <Link to="/about">About</Link>
                         </li>
                         <li className="py-2
                             pl-5
@@ -192,7 +195,7 @@ function NavBar() {
                             hover:bg-ternary/[0.3]
                             hover:cursor-pointer
                             hover:rounded-lg">
-                            <a href="#updates">Updates</a>
+                            <Link to="/updates">Updates</Link>
                         </li>
                         <li className="py-2
                             pl-5
@@ -200,7 +203,7 @@ function NavBar() {
                             hover:bg-ternary/[0.3]
                             hover:cursor-pointer
                             hover:rounded-lg">
-                            <a href="#contact">Contact</a>
+                            <Link to="/contact">Contact</Link>
                         </li>
                     </ul>
                 </div>
