@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
@@ -8,7 +9,6 @@ function NavBar() {
     const [isMenuToggle, setisMenuToggle] = useState(false);
     const openMenu = () => {
         setisMenuToggle(!isMenuToggle);
-        console.log(isMenuToggle)
     }
   return (
     <>
@@ -19,18 +19,17 @@ function NavBar() {
             justify-between
             px-5
             py-2
-            md:px-10
-            md:py-2">
+            lg:px-10
+            lg:py-2">
 
             {/* logo */}
             <div className="w-2/3
                 flex
                 sm:w-3/4
-                md:w-1/3
-                md:flex">
-                <img src="logo.svg" alt="Ceylon Visit logo" className="w-40
-
-                    md:w-44"/>
+                lg:w-1/3
+                lg:flex">
+                <img src="logo.svg" alt="Ceylon Visit logo" className="w-36
+                    lg:w-44"/>
             </div>
 
             {/* nav links */}
@@ -41,33 +40,33 @@ function NavBar() {
                 mt-14
                 right-0
                 rounded-lg
-                md:flex
-                md:w-1/2
-                md:px-20
-                md:relative
-                md:mt-0
-                md:shadow-none
-                md:justify-between
-                md:items-center">
+                lg:flex
+                lg:w-1/2
+                lg:px-20
+                lg:relative
+                lg:mt-0
+                lg:shadow-none
+                lg:justify-between
+                lg:items-center">
                 <ul className="
                     w-full
                     font-semibold
                     flex
                     flex-col
                     gap-2
-                    md:gap-4
-                    md:flex
-                    md:flex-row
-                    md:pl-0
-                    md:justify-between" id="nav-links">
+                    lg:gap-4
+                    lg:flex
+                    lg:flex-row
+                    lg:pl-0
+                    lg:justify-between" id="nav-links">
                     <li className="py-2
                         pl-5
                         hover:text-[#2E9B85]
                         hover:bg-ternary/[0.3]
                         hover:cursor-pointer
                         hover:rounded-lg
-                        md:px-3">
-                        <a href="#home">Home</a>
+                        lg:px-3">
+                        <Link to="/">Home</Link>
                     </li>
                     <li className="py-2
                         pl-5
@@ -75,8 +74,8 @@ function NavBar() {
                         hover:bg-ternary/[0.3]
                         hover:cursor-pointer
                         hover:rounded-lg
-                        md:px-3">
-                        <a href="#services">Services</a>
+                        lg:px-3">
+                        <Link to="/services">Services</Link>
                     </li>
                     <li className="py-2
                         pl-5
@@ -84,8 +83,8 @@ function NavBar() {
                         hover:bg-ternary/[0.3]
                         hover:cursor-pointer
                         hover:rounded-lg
-                        md:px-3">
-                        <a href="#about">About</a>
+                        lg:px-3">
+                        <Link to="/about">About</Link>
                     </li>
                     <li className="py-2
                         pl-5
@@ -93,8 +92,8 @@ function NavBar() {
                         hover:bg-ternary/[0.3]
                         hover:cursor-pointer
                         hover:rounded-lg
-                        md:px-3">
-                        <a href="#updates">Updates</a>
+                        lg:px-3">
+                        <Link to="/updates">Updates</Link>
                     </li>
                     <li className="py-2
                         pl-5
@@ -102,8 +101,8 @@ function NavBar() {
                         hover:bg-ternary/[0.3]
                         hover:cursor-pointer
                         hover:rounded-lg
-                        md:px-3">
-                        <a href="#contact">Contact</a>
+                        lg:px-3">
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
             </div>
@@ -113,18 +112,20 @@ function NavBar() {
                 flex
                 justify-center
                 items-center">
-                <button className="w-full
+                <button className="w-16
                     bg-primary
                     rounded-lg
                     text-secondary
                     text-sm
-                    py-2">
+                    py-2
+                    md:w-full
+                    lg:w-full">
                     Sign In
                 </button>
             </div>
 
             {/* btn menu */}
-            <div className="md:hidden
+            <div className="lg:hidden
                 flex
                 justify-center
                 items-center">
@@ -153,7 +154,7 @@ function NavBar() {
                 mt-14
                 right-0
                 rounded-lg
-                md:hidden">
+                lg:hidden">
                     <ul className="
                         w-full
                         font-semibold
@@ -167,7 +168,7 @@ function NavBar() {
                             hover:bg-ternary/[0.3]
                             hover:cursor-pointer
                             hover:rounded-lg">
-                            <a href="#home">Home</a>
+                            <Link to="/" className="link"></Link>
                         </li>
                         <li className="py-2
                             pl-5
