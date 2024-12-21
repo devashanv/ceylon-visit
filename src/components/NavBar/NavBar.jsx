@@ -122,7 +122,8 @@ function NavBar() {
                     md:w-full
                     lg:py-2
                     lg:w-full
-                    lg:text-base">
+                    lg:text-base
+                    hover:bg-[#2E9B85]">
                     Sign In
                 </button>
             </div>
@@ -154,8 +155,9 @@ function NavBar() {
                 bg-backgbround
                 shadow 
                 w-1/2
-                mt-14
+                mt-11
                 right-0
+                z-50
                 rounded-lg
                 lg:hidden">
                     <ul className="
