@@ -7,15 +7,20 @@ import { GoArrowUpRight } from "react-icons/go";
 function App() {
   return (
     <>
+      <header>
+        <NavBar/>
+      </header>
       
-      <NavBar/>
       <main>
+        {/* hero section */}
         <div>
           <img src={HeroImage} alt="web main banner image" 
           className="w-full h-52
           object-cover
+          sm:h-96
           md:h-96
-          lg:h-100"/>
+          lg:h-100
+          lg:object-bottom"/>
 
           <div className="w-full
           text-backgbround
@@ -23,12 +28,16 @@ function App() {
             text-left
             absolute
             top-16
+            sm:top-28
+            md:top-28
             lg:px-0
             lg:w-1/2
             lg:pl-40
-            lg:top-32">
+            lg:top-40">
             <p className="text-[20px] 
               font-bold
+              sm:text-4xl
+              md:text-4xl
               lg:text-6xl">
               <span className="text-secondary">Wellness</span> Tourism, <br/> Paradise..
             </p>
@@ -36,12 +45,18 @@ function App() {
               pt-1
               pr-40
               text-ternary
+              sm:text-base
+              sm:my-2
+              sm:w-2/3
+              md:w-full
+              md:text-base
               lg:text-lg
               lg:mt-4
               lg:pr-10
               lg:leading-8">
               Sri Lanka, the "Pearl of the Indian Ocean," offers breathtaking landscapes, rich cultural heritage, and diverse wildlife.
-              <span className="hidden lg:flex">
+              <span className="hidden
+              sm:hidden md:hidden lg:flex">
               Visitors can explore golden beaches, ancient temples, and lush tea plantations in this island paradise.
               </span>
             </p>
@@ -58,17 +73,87 @@ function App() {
               justify-center
               items-center
               gap-1
+              font-bold
+              sm:px-6
+              sm:py-2
+              sm:text-sm
               lg:mt-8
               lg:text-base
               lg:py-2
-              lg:px-8">
+              lg:px-8
+              hover:bg-secondary/[0.3]
+              hover:transition-all
+              hover:duration-700">
               Apply Visa
               <span>
                 <GoArrowUpRight className="w-4 h-4 lg:w-5 lg:h-5"/>
                 </span>
             </button>
           </div>
+
+          {/* theropy card */}
+          <div className="flex
+            gap-2
+            py-2
+            px-4
+            lg:gap-4
+            lg:px-0
+            lg:pl-40
+            lg:mt-[-55px]">
+            <div className="w-80 bg-[#C4B36D]/[0.8]
+              px-4
+              py-2
+              rounded-lg
+              hover:cursor-pointer
+              hover:bg-[#C4B36D]
+              hover:transition-all
+              hover:duration-700
+              lg:w-60
+              lg:h-32">
+              <h2 className="text-sm 
+              pb-2
+              font-bold
+              lg:text-base">
+                Wellness Therapy</h2>
+              <hr className="pb-2 "/>
+              <p className="text-xs font-medium lg:text-sm">Traditional Sri Lankan ayuruwedic therapy. </p>
+            </div>
+
+            <div className="w-80 bg-[#C4B36D]/[0.8]
+              px-4
+              py-2
+              rounded-lg
+              hover:cursor-pointer
+              hover:bg-[#C4B36D]
+              hover:transition-all
+              hover:duration-700
+              lg:w-60
+              lg:h-32">
+              <h2 className="text-sm pb-2
+              font-bold lg:text-base">Nature Therapy </h2>
+              <hr className="pb-2 "/>
+              <p className="text-xs font-medium lg:text-sm">The all about nature and experience from one country.</p>
+            </div>
+
+            <div className="w-80 bg-[#C4B36D]/[0.8]
+              px-4
+              py-2
+              rounded-lg
+              hover:cursor-pointer
+              hover:bg-[#C4B36D]
+              hover:transition-all
+              hover:duration-700
+              lg:w-60
+              lg:h-32">
+              <h2 className="text-sm pb-2
+              font-bold lg:text-base">Meditation Therapy</h2>
+              <hr className="pb-2 "/>
+              <p className="text-xs font-medium lg:text-sm">Cultural medicine therapies,unique only for Sri Lankans.</p>
+            </div>
+          </div>
         </div>
+
+        {/*  */}
       </main>
     </>
   )

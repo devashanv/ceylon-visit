@@ -154,8 +154,9 @@ function NavBar() {
                 bg-backgbround
                 shadow 
                 w-1/2
-                mt-14
+                mt-11
                 right-0
+                z-50
                 rounded-lg
                 lg:hidden">
                     <ul className="
