@@ -170,23 +170,23 @@ function App() {
 
           <div className="flex flex-col gap-6 mt-6 lg:flex-row">
             <section className="w-full flex justify-between items-center gap-6">
-              <article className="bg-backgbround shadow-card  w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center">
+              <article className="bg-backgbround shadow-card  w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center hover:cursor-pointer card-hover">
                 <FaPlaneDeparture className="w-12 h-12 text-primary"/>
                 <p className="mt-4 font-bold text-sm">Tourist Visa <br/> Applying</p>
               </article>
 
-              <article className="bg-backgbround shadow-card w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center">
+              <article className="bg-backgbround shadow-card w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center card-hover">
                 <FaHotel className="w-12 h-12 text-primary"/>
                 <p className="mt-4 font-bold text-sm">Accommodation <br/> Booking</p>
               </article>
             </section>
 
             <section  className="w-full flex justify-between items-center gap-6">
-              <article className="bg-backgbround shadow-card w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center">
+              <article className="bg-backgbround shadow-card w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center card-hover">
                 <FaPersonHiking className="w-12 h-12 text-primary"/>
                 <p className="mt-4 font-bold text-sm">Tourist Guider <br/> Booking</p>
               </article>
-              <article className="bg-backgbround shadow-card w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center">
+              <article className="bg-backgbround shadow-card w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center card-hover">
                 <FaTaxi className="w-12 h-12 text-primary"/>
                 <p className="mt-4 font-bold text-sm">Transport  <br/> Booking</p>
               </article>
