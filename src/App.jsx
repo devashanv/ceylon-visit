@@ -1,8 +1,12 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar';
 import HeroImage from './assets/banner-image.png';
+import { Link } from "react-router-dom";
 
 import { GoArrowUpRight } from "react-icons/go";
+import { FaPlaneDeparture } from "react-icons/fa";
+import { FaHotel, FaTaxi , FaPersonHiking } from "react-icons/fa6";
+import { RiArrowRightDoubleFill } from "react-icons/ri";
 
 function App() {
   return (
@@ -14,6 +18,7 @@ function App() {
       <main>
         {/* hero section */}
         <div>
+
           <img src={HeroImage} alt="web main banner image" 
           className="w-full h-52
           object-cover
@@ -34,6 +39,7 @@ function App() {
             lg:w-1/2
             lg:pl-40
             lg:top-40">
+
             <p className="text-[20px] 
               font-bold
               sm:text-4xl
@@ -41,6 +47,7 @@ function App() {
               lg:text-6xl">
               <span className="text-secondary">Wellness</span> Tourism, <br/> Paradise..
             </p>
+
             <p className="text-[10px]
               pt-1
               pr-40
@@ -87,7 +94,7 @@ function App() {
               Apply Visa
               <span>
                 <GoArrowUpRight className="w-4 h-4 lg:w-5 lg:h-5"/>
-                </span>
+              </span>
             </button>
           </div>
 
@@ -100,7 +107,8 @@ function App() {
             lg:px-0
             lg:pl-40
             lg:mt-[-55px]">
-            <div className="w-80 bg-[#C4B36D]/[0.8]
+
+            <div className="w-1/3 bg-[#C4B36D]/[0.8]
               px-4
               py-2
               rounded-lg
@@ -119,7 +127,7 @@ function App() {
               <p className="text-xs font-medium lg:text-sm">Traditional Sri Lankan ayuruwedic therapy. </p>
             </div>
 
-            <div className="w-80 bg-[#C4B36D]/[0.8]
+            <div className="w-1/3 bg-[#C4B36D]/[0.8]
               px-4
               py-2
               rounded-lg
@@ -135,7 +143,7 @@ function App() {
               <p className="text-xs font-medium lg:text-sm">The all about nature and experience from one country.</p>
             </div>
 
-            <div className="w-80 bg-[#C4B36D]/[0.8]
+            <div className="w-1/3 bg-[#C4B36D]/[0.8]
               px-4
               py-2
               rounded-lg
@@ -148,12 +156,49 @@ function App() {
               <h2 className="text-sm pb-2
               font-bold lg:text-base">Meditation Therapy</h2>
               <hr className="pb-2 "/>
-              <p className="text-xs font-medium lg:text-sm">Cultural medicine therapies,unique only for Sri Lankans.</p>
+              <p className="text-xs font-medium lg:text-sm">Cultural medicine therapies, unique only for Sri Lankans.</p>
             </div>
           </div>
         </div>
 
-        {/*  */}
+        {/* services section */}
+        <div className="px-4 mt-10 lg:px-40 lg:mt-24 text-mainfont">
+          <div className="py-2 text-center">
+            <h1 className="text-lg font-bold lg:text-2xl">Our Services</h1>
+            <p className="mt-[-5px] text-secondary font-semibold text-lg">we provide valuables services for you</p>
+          </div>
+
+          <div className="flex flex-col gap-6 mt-6 lg:flex-row">
+            <section className="w-full flex justify-between items-center gap-6">
+              <article className="bg-backgbround shadow-card  w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center">
+                <FaPlaneDeparture className="w-12 h-12 text-primary"/>
+                <p className="mt-4 font-bold text-sm">Tourist Visa <br/> Applying</p>
+              </article>
+
+              <article className="bg-backgbround shadow-card w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center">
+                <FaHotel className="w-12 h-12 text-primary"/>
+                <p className="mt-4 font-bold text-sm">Accommodation <br/> Booking</p>
+              </article>
+            </section>
+
+            <section  className="w-full flex justify-between items-center gap-6">
+              <article className="bg-backgbround shadow-card w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center">
+                <FaPersonHiking className="w-12 h-12 text-primary"/>
+                <p className="mt-4 font-bold text-sm">Tourist Guider <br/> Booking</p>
+              </article>
+              <article className="bg-backgbround shadow-card w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center">
+                <FaTaxi className="w-12 h-12 text-primary"/>
+                <p className="mt-4 font-bold text-sm">Transport  <br/> Booking</p>
+              </article>
+            </section>
+          </div>
+          <div className=" mt-5 lg:text-right flex justify-center lg:justify-end items-center group ">
+                <Link to="/services" className="text-sm text-[#2E9B85] font-bold lg:text-base group-hover:text-primary group-hover:cursor-pointer ">
+                more services
+                </Link>
+                <RiArrowRightDoubleFill className="w-4 h-4 mt-1 underline text-[#2E9B85] group-hover:text-primary group-hover:cursor-pointer"/>
+          </div>
+        </div>
       </main>
     </>
   )

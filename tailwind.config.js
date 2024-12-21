@@ -19,6 +19,10 @@ export default {
 
       backgroundImage: {
         "banner-image": "url('/assets/banner-image.png')",
+      },
+
+      boxShadow: {
+        "card": "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
       }
     },
   },
