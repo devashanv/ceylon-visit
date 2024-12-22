@@ -2,6 +2,7 @@ import './App.css'
 import NavBar from './components/NavBar/NavBar';
 import HeroImage from './assets/banner-image.png';
 import AboutBannerImage from "./assets/about-us.jpg";
+import PromotionBanner from "./assets/wellness-banner.png";
 import { Link } from "react-router-dom";
 
 import { GoArrowUpRight } from "react-icons/go";
@@ -165,7 +166,7 @@ function App() {
         <div className="px-4 mt-10 lg:px-40 lg:mt-24 text-mainfont">
           <div className="py-2 text-center">
             <h1 className="text-lg font-bold lg:text-2xl">Our Services</h1>
-            <p className="mt-[-5px] text-ternary font-medium text-lg">we provide valuables services for you</p>
+            <p className="mt-[-5px] text-secondary font-medium text-lg">we provide valuables services for you</p>
           </div>
 
           <div className="flex flex-col gap-6 mt-6 lg:flex-row">
@@ -206,7 +207,7 @@ function App() {
         <div className="mt-14">
           <div className="py-2 text-center">
             <h1 className="text-lg font-bold lg:text-2xl">About Us</h1>
-            <p className="mt-[-5px] text-ternary font-semibold text-lg">our unique values for you</p>
+            <p className="mt-[-5px] text-secondary font-semibold text-lg">our unique values for you</p>
           </div>
 
           <section className="mt-3 px-4 flex flex-col sm:flex-row sm:gap-6 lg:px-40">
@@ -255,8 +256,44 @@ function App() {
               </article>
 
               <article className="mt-5 w-full max-h-96 sm:w-1/2 sm:mt-0">
-                <img src={AboutBannerImage} alt="About us banner image" className="max-h-96 w-full object-cover rounded-lg"/>
+                <img src={AboutBannerImage} alt="About us banner image" className="max-h-96 w-full object-cover rounded-lg lg:object-left-bottom"/>
               </article>
+          </section>
+        </div>
+
+        {/* promotion section */}
+        <div className="mt-24 lg:mt-36">
+          <section className="w-full flex justify-center items-center">
+            <img src={PromotionBanner} alt="wellness promotion banner" className="object-cover lg:max-h-96 lg:object-contain"/>
+            <div className="bg-mainfont/[0.7] rounded-lg min-h-40 sm:min-h-52 md:min-h-60 md:max-h-72 absolute lg:min-h-96 w-4/5 flex flex-col justify-center items-center ">
+              <p className="text-secondary text-3xl sm:text-5xl md:text-6xl banner-font font-semibold lg:text-8xl">Sri Lanka</p>
+              <p className="text-secondary text-md sm:text-lg md:text-xl banner-font lg:text-4xl">World's Best Wellness Tourism</p>
+              <button className="border-secondary
+                border
+                rounded-lg
+                text-[9px]
+                text-secondary
+                px-4
+                py-1
+                mt-3
+                flex
+                justify-center
+                items-center
+                gap-1
+                font-bold
+                sm:px-6
+                sm:py-2
+                sm:text-sm
+                lg:mt-8
+                lg:text-base
+                lg:py-2
+                lg:px-8
+                hover:bg-secondary/[0.3]
+                hover:transition-all
+                hover:duration-700">
+                Explore More
+              </button>
+            </div>
           </section>
         </div>
       </main>

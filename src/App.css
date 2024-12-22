@@ -1,8 +1,12 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
 
 .card-hover:hover{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     padding: 0 25px;
     transition: all 0.2s ease-out;
     cursor: pointer;
+}
+
+.banner-font{
+    font-family: "Arima", serif;
 }
