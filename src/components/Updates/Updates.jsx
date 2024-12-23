@@ -4,7 +4,9 @@ import NavBar from '../NavBar/NavBar';
 function Updates() {
   return (
     <>
-      <NavBar />
+      <header>
+        <NavBar/>
+      </header>
       <div>Updates</div>
     </>
     

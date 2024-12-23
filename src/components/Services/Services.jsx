@@ -4,8 +4,10 @@ import NavBar from '../NavBar/NavBar';
 function Services() {
   return (
     <>
-      <NavBar />
-      <div>Services</div>
+      <header>
+        <NavBar/>
+      </header>
+      <div className="w-full bg-primary">Services</div>
     </>
    
   )

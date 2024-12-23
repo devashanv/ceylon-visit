@@ -4,7 +4,9 @@ import NavBar from '../NavBar/NavBar';
 function About() {
   return (
     <>
-      <NavBar />
+      <header>
+        <NavBar/>
+      </header>
       <div>About</div>
     </>
   )
