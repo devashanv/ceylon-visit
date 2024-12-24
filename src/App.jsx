@@ -1,5 +1,6 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 import HeroImage from './assets/banner-image.png';
 import AboutBannerImage from "./assets/about-us.jpg";
 import PromotionBanner from "./assets/wellness-banner.png";
@@ -115,7 +116,7 @@ function App() {
         <NavBar/>
       </header>
       
-      <main className="mb-10">
+      <main>
         {/* hero section */}
         <div>
           <img src={HeroImage} alt="web main banner image" 
@@ -270,24 +271,24 @@ function App() {
 
           <div className="flex flex-col gap-6 mt-6 lg:flex-row">
             <section className="w-full flex justify-between items-center gap-6">
-              <article className="bg-backgbround shadow-card  w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center hover:cursor-pointer card-hover">
+              <article className="bg-backgbround shadow-card  w-1/2 min-h-40 lg:min-h-48 rounded-lg flex flex-col justify-center items-center text-center hover:cursor-pointer card-hover">
                 <FaPlaneDeparture className="w-12 h-12 text-primary"/>
                 <p className="mt-4 font-bold text-sm">Tourist Visa <br/> Applying</p>
               </article>
 
-              <article className="bg-backgbround shadow-card  w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center hover:cursor-pointer card-hover">
+              <article className="bg-backgbround shadow-card  w-1/2 min-h-40 lg:min-h-48 rounded-lg flex flex-col justify-center items-center text-center hover:cursor-pointer card-hover">
                 <FaHotel className="w-12 h-12 text-primary"/>
                 <p className="mt-4 font-bold text-sm">Hotel <br/> Booking</p>
               </article>
             </section>
 
             <section  className="w-full flex justify-between items-center gap-6">
-              <article className="bg-backgbround shadow-card w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center card-hover">
+              <article className="bg-backgbround shadow-card w-1/2 min-h-40 lg:min-h-48 rounded-lg flex flex-col justify-center items-center text-center card-hover">
                 <FaPersonHiking className="w-12 h-12 text-primary"/>
                 <p className="mt-4 font-bold text-sm">Tourist Guider <br/> Booking</p>
               </article>
 
-              <article className="bg-backgbround shadow-card w-1/2 min-h-40 rounded-lg flex flex-col justify-center items-center text-center card-hover">
+              <article className="bg-backgbround shadow-card w-1/2 min-h-40 lg:min-h-48 rounded-lg flex flex-col justify-center items-center text-center card-hover">
                 <FaTaxi className="w-12 h-12 text-primary"/>
                 <p className="mt-4 font-bold text-sm">Transport  <br/> Booking</p>
               </article>
@@ -304,20 +305,25 @@ function App() {
 
         {/* about section */}
         <div className="mt-14">
-          <div className="py-2 text-center mb-8">
+          <div className="py-2 text-center mb-4">
             <h1 className="text-lg font-bold lg:text-4xl">About Us</h1>
             <p className="text-[#7B7B7B] font-semibold text-lg">our unique values for you</p>
           </div>
 
-          <section className="mt-3 px-4 flex flex-col sm:flex-row sm:gap-6 lg:px-40">
-              <article className="sm:w-1/2 sm:px-5"> 
-                <p className="text-sm sm:text-base sm:pt-5">
-                  We are most experienced tourism agency in of Sri Lanka. We are  ensure to provide safety and fair tourism experience. Also, we provide consulting service within your vacation period. We aim to provide high quality and valuable tourism experience to you.
-                  <span>
+          <section className="px-4 flex flex-col sm:flex-row sm:gap-6 lg:px-40">
+              <article className="sm:w-1/2 sm:px-5 text-[#555758]"> 
+                <p className="text-sm sm:text-sm sm:pt-5  lg:text-base font-semibold">
+                  <p className="mb-5">
+                    We are most experienced tourism agency in of Sri Lanka. We are  ensure to provide safety and fair tourism experience. Also, we provide consulting service within your vacation period. We aim to provide high quality and valuable tourism experience to you.
+                  </p>
+                  <p>
+                    With a passion for travel and a commitment to excellence, our platform is designed to provide personalized and unforgettable experiences. its includes adventure, relaxation, or cultural discovery, we cater to your unique travel aspirations.
+                    <span>
                     <Link to="/about" className="text-sm text-[#2E9B85] font-bold lg:text-base hover:text-primary hover:cursor-pointer underline ml-2">
                         more details
                     </Link>
                   </span>
+                  </p>
                 </p>
 
                 <p className="mt-4 text-sm">
@@ -354,8 +360,8 @@ function App() {
 
               </article>
 
-              <article className="mt-5 w-full max-h-96 sm:w-1/2 sm:mt-0">
-                <img src={AboutBannerImage} alt="About us banner image" className="max-h-96 w-full object-cover rounded-lg lg:object-left-bottom"/>
+              <article className="mt-5 w-full  max-h-96 sm:w-1/2 sm:mt-0">
+                <img src={AboutBannerImage} alt="About us banner image" className="max-h-96 w-full object-cover rounded-lg"/>
               </article>
           </section>
         </div>
@@ -466,6 +472,12 @@ function App() {
           </div>
         </div>
       </main>
+
+      {/* footer section */}
+      <div className="bg-primary mt-40">
+        <Footer />
+      </div>
+
     </>
   )
 }
