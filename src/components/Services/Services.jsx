@@ -11,14 +11,6 @@ import { GiMeditation, GiForestCamp, GiElephant } from "react-icons/gi";
 
 
 function Services() {
-  const serviceItems = [
-    {
-
-    }
-  ]
-
-
-
   return (
     <>
       <header>
@@ -40,18 +32,19 @@ function Services() {
         </section>
 
         {/* categories section */}
-        <div className="mt-28">
+        <div className="mt-16 lg:mt-28">
           <div className="py-2 text-center mb-4">
             <h1 className="text-lg font-bold lg:text-4xl">Categories</h1>
             <p className="text-[#7B7B7B] font-medium text-lg">our unique values for you</p>
           </div>
-
+          
+          {/* cards area */}
           <div className="text-mainfont">
-            <div className="w-4/5 mx-auto mb-3">
-              <section className="w-full flex  justify-center items-start gap-10 flex-wrap">
+            <div className="w-5/6 mx-auto mb-3">
+              <section className="w-full flex justify-center items-center lg:justify-center lg:items-start gap-3 sm:gap-5 lg:gap-10 flex-wrap">
                 {/* to do: link set with relavent page */}
                 <Link to="/add link">
-                  <article className="bg-backgbround  shadow-card mt-3 w-[17rem] min-h-40 lg:min-h-36 rounded-lg flex flex-col justify-center items-center text-center hover:cursor-pointer card-hover">
+                  <article className="bg-backgbround w-[9rem] shadow-card mt-1 lg:mt-3 lg:w-[17rem] min-h-40 lg:min-h-36 rounded-lg flex flex-col justify-center items-center text-center hover:cursor-pointer card-hover">
                     <FaPlaneDeparture className="w-12 h-12 text-primary"/>
                     <p className="mt-4 font-bold text-sm">Tourist Visa <br/> Applying</p>
                   </article>
@@ -59,7 +52,7 @@ function Services() {
 
                 {/* to do: link set with relavent page */}
                 <Link to="/add link">
-                  <article className="bg-primary  shadow-card mt-3 w-[17rem] min-h-40 lg:min-h-36 rounded-lg flex flex-col justify-center items-center text-center card-hover">
+                  <article className="bg-primary w-[9rem]  shadow-card mt-1 lg:mt-3 lg:w-[17rem] min-h-40 lg:min-h-36 rounded-lg flex flex-col justify-center items-center text-center card-hover">
                     <GiMeditation className="w-12 h-12 text-secondary"/>
                     <p className="mt-4 font-bold text-sm text-backgbround">Wellness  <br/> Services</p>
                   </article>
@@ -67,7 +60,7 @@ function Services() {
 
                 {/* to do: link set with relavent page */}
                 <Link to="/add link">
-                  <article className="bg-backgbround  shadow-card mt-3  w-[17rem] min-h-40 lg:min-h-36 rounded-lg flex flex-col justify-center items-center text-center hover:cursor-pointer card-hover">
+                  <article className="bg-backgbround  shadow-card mt-1 lg:mt-3  w-[9rem] lg:w-[17rem] min-h-40 lg:min-h-36 rounded-lg flex flex-col justify-center items-center text-center hover:cursor-pointer card-hover">
                     <FaHotel className="w-12 h-12 text-primary"/>
                     <p className="mt-4 font-bold text-sm">Hotel <br/> Booking</p>
                   </article>
@@ -75,7 +68,7 @@ function Services() {
 
                 {/* to do: link set with relavent page */}
                 <Link to="/add link">
-                  <article className="bg-backgbround  shadow-card mt-3 w-[17rem] min-h-40 lg:min-h-36 rounded-lg flex flex-col justify-center items-center text-center card-hover">
+                  <article className="bg-backgbround  shadow-card mt-1 lg:mt-3 w-[9rem] lg:w-[17rem] min-h-40 lg:min-h-36 rounded-lg flex flex-col justify-center items-center text-center card-hover">
                     <FaPersonHiking className="w-12 h-12 text-primary"/>
                     <p className="mt-4 font-bold text-sm">Tourist Guider <br/> Booking</p>
                   </article>
@@ -83,7 +76,7 @@ function Services() {
 
                 {/* to do: link set with relavent page */}
                 <Link to="/add link">
-                  <article className="bg-backgbround  shadow-card mt-3 w-[17rem] min-h-40 lg:min-h-36 rounded-lg flex flex-col justify-center items-center text-center card-hover">
+                  <article className="bg-backgbround  shadow-card mt-1 lg:mt-3 w-[9rem] lg:w-[17rem] min-h-40 lg:min-h-36 rounded-lg flex flex-col justify-center items-center text-center card-hover">
                     <FaTaxi className="w-12 h-12 text-primary"/>
                     <p className="mt-4 font-bold text-sm">Transport  <br/> Booking</p>
                   </article>
@@ -91,7 +84,7 @@ function Services() {
 
                 {/* to do: link set with relavent page */}
                 <Link to="/add link">
-                  <article className="bg-backgbround  shadow-card mt-3 w-[17rem] min-h-40 lg:min-h-36 rounded-lg flex flex-col justify-center items-center text-center card-hover">
+                  <article className="bg-backgbround  shadow-card mt-1 lg:mt-3 w-[9rem] lg:w-[17rem] min-h-40 lg:min-h-36 rounded-lg flex flex-col justify-center items-center text-center card-hover">
                     <GiForestCamp className="w-12 h-12 text-primary"/>
                     <p className="mt-4 font-bold text-sm">Transport  <br/> Booking</p>
                   </article>
@@ -99,7 +92,7 @@ function Services() {
 
                 {/* to do: link set with relavent page */}
                 <Link to="/add link">
-                  <article className="bg-backgbround  shadow-card mt-3 w-[17rem] min-h-40 lg:min-h-36 rounded-lg flex flex-col justify-center items-center text-center card-hover">
+                  <article className="bg-backgbround  shadow-card mt-1 lg:mt-3 w-[9rem] lg:w-[17rem] min-h-40 lg:min-h-36 rounded-lg flex flex-col justify-center items-center text-center card-hover">
                     <GiElephant className="w-12 h-12 text-primary"/>
                     <p className="mt-4 font-bold text-sm">Safari  <br/> Services</p>
                   </article>
