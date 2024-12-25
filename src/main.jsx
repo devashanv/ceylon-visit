@@ -6,6 +6,8 @@ import Services from './components/Services/Services.jsx';
 import About from './components/About/About.jsx';
 import Updates from './components/Updates/Updates.jsx';
 import Contact from './components/ContactUs/ContactUs.jsx';
+import SignIn from './pages/SignIn/SignIn.jsx';
+import SignUp from './pages/SignUp/SignUp.jsx';
 
 import {
   createBrowserRouter,
@@ -32,7 +34,16 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />,
-  }
+  },
+  {
+    path: "/signin",
+    element: <SignIn />,
+  },
+  {
+    path: "/signup",
+    element: <SignUp />,
+  },
+  
 
 ]);
 
