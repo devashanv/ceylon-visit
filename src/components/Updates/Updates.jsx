@@ -7,7 +7,7 @@ function Updates() {
       <header>
         <NavBar/>
       </header>
-      <div>Updates</div>
+      <div className="text-center mt-52">under development</div>
     </>
     
   )
