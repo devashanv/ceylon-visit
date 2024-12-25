@@ -305,10 +305,10 @@ function App() {
 
         {/* about section */}
         <div className="mt-14">
-          <div className="py-2 text-center mb-4">
+          <section className="py-2 text-center mb-4">
             <h1 className="text-lg font-bold lg:text-4xl">About Us</h1>
             <p className="text-[#7B7B7B] font-semibold text-lg">our unique values for you</p>
-          </div>
+          </section>
 
           <section className="px-4 flex flex-col sm:flex-row sm:gap-6 lg:px-40">
               <article className="sm:w-1/2 sm:px-5 text-[#555758]"> 

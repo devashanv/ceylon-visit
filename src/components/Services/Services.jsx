@@ -4,7 +4,7 @@ import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
 
-import ServiceBanner from '../../assets/about-banner.svg'
+import ServiceBanner from '../../assets/services-banner.svg'
 import { FaPlaneDeparture } from "react-icons/fa";
 import { FaHotel, FaTaxi , FaPersonHiking } from "react-icons/fa6";
 import { GiMeditation, GiForestCamp, GiElephant } from "react-icons/gi";
@@ -19,7 +19,7 @@ function Services() {
 
       <main className="mt-10 text-mainfont">
         {/* heder section */}
-        <section className="w-5/6 lg:w-4/5 mx-auto flex flex-col gap-8 sm:gap-5 sm:flex-row lg:gap-10 lg:flex-row">
+        <section className="w-5/6 lg:w-4/5 mx-auto flex flex-col text-center sm:text-start md:text-left gap-8 sm:gap-5 sm:flex-row lg:gap-10 lg:flex-row">
           <section className="sm:w-1/2 lg:w-2/5 lg:pt-10">
             <h1 className="mb-3 text-3xl lg:text-6xl font-bold lg:mb-5">Servic<span className="text-secondary">es</span></h1>
             <p className="text-sm w-full sm:text-sm sm:pr-5  lg:text-lg font-semibold text-[#555758] lg:pr-16">
@@ -27,7 +27,7 @@ function Services() {
             </p>
           </section>
           <section  className="sm:w-1/2 lg:w-3/5">
-              <img src={ServiceBanner} alt="services banner image" className="max-h-48 sm:max-h-60 w-full lg:max-h-96"/>
+              <img src={ServiceBanner} alt="Services banner image" className="max-h-48 sm:max-h-60 w-full lg:max-h-96"/>
           </section>
         </section>
 
@@ -39,7 +39,7 @@ function Services() {
           </div>
           
           {/* cards area */}
-          <div className="text-mainfont">
+          <div className="text-mainfont bg-[#D9D9D9]/[0.3] py-5">
             <div className="w-5/6 mx-auto mb-3">
               <section className="w-full flex justify-center items-center lg:justify-center lg:items-start gap-3 sm:gap-5 lg:gap-10 flex-wrap">
                 {/* to do: link set with relavent page */}
@@ -104,7 +104,7 @@ function Services() {
       </main>
 
       {/* footer section */}
-      <div className="bg-primary mt-40">
+      <div className="bg-primary mt-32">
         <Footer />
       </div>
     </>
