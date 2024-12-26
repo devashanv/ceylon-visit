@@ -15,7 +15,7 @@ function SignIn() {
 
       {/* sign in form */}
       <main className="mt-20">
-        <div className="bg-backgbround py-8 lg:py-0 w-5/6 sm:w-2/3 lg:w-3/5 mx-auto flex h-auto shadow-card rounded-lg">
+        <div className="bg-backgbround py-8 lg:py-0 w-5/6 sm:w-2/3 lg:w-3/5 mx-auto flex h-auto shadow-card rounded-lg ">
           <section className="hidden lg:block lg:w-2/5">
             <img src={SignInBanner} 
               alt="Signin banner image"
@@ -38,15 +38,15 @@ function SignIn() {
                     name="userEmail"
                     id="user_email"
                     placeholder="enter email address"
-                    className="w-full text-sm lg:text-base py-2 px-2 rounded-lg border-2 border-mainfont/[0.6] text-mainfont lg:font-semibold focus:ring-1  focus:ring-mainfont/[0.2] focus:outline-none focus:border-mainfont/[0.9] placeholder:text-[#949494]/[0.7]
+                    className="w-full text-sm lg:text-base py-[6px] px-2 rounded-lg border-2 border-mainfont/[0.6] text-mainfont lg:font-semibold focus:ring-1  focus:ring-mainfont/[0.2] focus:outline-none focus:border-mainfont/[0.9] placeholder:text-[#949494]/[0.7]
                     placeholder:text-xs lg:placeholder:text-sm"/>
 
                 <input
                     type="text"
                     name="userEmail"
-                    id="user-password"
+                    id="user_password"
                     placeholder="enter password"
-                    className="w-full text-sm lg:text-base py-2 px-2 rounded-lg border-2 border-mainfont/[0.6] text-mainfont lg:font-semibold focus:ring-1  focus:ring-mainfont/[0.2] focus:outline-none focus:border-mainfont/[0.9] placeholder:text-[#949494]/[0.7]
+                    className="w-full text-sm lg:text-base py-[6px] px-2 rounded-lg border-2 border-mainfont/[0.6] text-mainfont lg:font-semibold focus:ring-1  focus:ring-mainfont/[0.2] focus:outline-none focus:border-mainfont/[0.9] placeholder:text-[#949494]/[0.7]
                     placeholder:text-xs lg:placeholder:text-sm mt-3"/>
 
                 <div className="text-right">
@@ -66,7 +66,7 @@ function SignIn() {
 
             <div>
               <p className="text-xs lg:text-sm text-[#555758] font-semibold">
-                Already have an acount? 
+                A new user? 
                 <Link to="/signup"
                 className="text-[#2E9B85] underline font-bold ml-1 hover:text-primary">Sign Up</Link>
               </p>
