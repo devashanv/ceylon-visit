@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import NavBar from '../../components/NavBar/NavBar';
 
 function SignUp() {
   return (
-    <div>SignUp</div>
+    <>
+        <header>
+            <NavBar />
+        </header>
+
+        <h1>Sign up</h1>
+    </>
   )
 }
 

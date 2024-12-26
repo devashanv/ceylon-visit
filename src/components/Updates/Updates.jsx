@@ -10,8 +10,8 @@ function Updates() {
         <NavBar/>
       </header>
       <div className="text-center mt-52">
-        under development
-        <Link to="/signin">Signin</Link>
+        under development<br/>
+        <Link to="/signin">Signin</Link><br/>
         <Link to="/signup">register</Link>
       </div>
     </>
