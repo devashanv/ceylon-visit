@@ -144,7 +144,7 @@ function ContactUs() {
                   name="userContatcName"
                   id="user_contatc_name"
                   placeholder="enter first and last name"
-                  className="w-full text-sm lg:w-5/6 lg:text-base py-2 px-2 rounded-lg border-2 border-secondary bg-[#f4f4f4]/[0.6] text-backgbround focus:ring-1  focus:ring-secondary focus:outline-none focus:border-secondary placeholder:text-[#949494]
+                  className="w-full text-mainfont text-sm lg:w-5/6 lg:text-base py-2 px-2 rounded-lg border-2 border-secondary bg-[#f4f4f4]/[0.6] focus:ring-1  focus:ring-secondary focus:outline-none focus:border-secondary placeholder:text-[#949494]
                   placeholder:text-xs lg:placeholder:text-sm"/>
 
                 <input
@@ -152,7 +152,7 @@ function ContactUs() {
                   name="userEmail"
                   id="user_email"
                   placeholder="enter email address"
-                  className="w-full text-sm lg:w-5/6 lg:text-base py-2 px-2 rounded-lg border-2 border-secondary bg-[#f4f4f4]/[0.6] text-backgbround focus:ring-1  focus:ring-secondary focus:outline-none focus:border-secondary placeholder:text-[#949494]
+                  className="w-full text-mainfont text-sm lg:w-5/6 lg:text-base py-2 px-2 rounded-lg border-2 border-secondary bg-[#f4f4f4]/[0.6] focus:ring-1 focus:ring-secondary focus:outline-none focus:border-secondary placeholder:text-[#949494]
                   placeholder:text-xs lg:placeholder:text-sm mt-3"/>
 
                 <textarea
@@ -160,7 +160,7 @@ function ContactUs() {
                   id="user_message"
                   placeholder="enter your message here.."
                   rows={6}
-                  className="w-full text-sm lg:w-5/6 lg:text-base py-2 px-2 rounded-lg border-2 resize-none border-secondary bg-[#f4f4f4]/[0.5] text-backgbround focus:ring-1 focus:ring-secondary focus:outline-none focus:border-secondary placeholder:text-[#949494]
+                  className="w-full text-sm lg:w-5/6 lg:text-base py-2 px-2 rounded-lg border-2 resize-none border-secondary bg-[#f4f4f4]/[0.5] text-mainfont focus:ring-1 focus:ring-secondary focus:outline-none focus:border-secondary placeholder:text-[#949494]
                   placeholder:text-xs lg:placeholder:text-sm mt-3"></textarea>
 
                 <button
@@ -189,7 +189,7 @@ function ContactUs() {
       </main>
 
       {/* footer section */}
-        <div className="bg-primary mt-28">
+      <div className="bg-primary mt-28">
         <Footer />
       </div>
     </>

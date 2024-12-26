@@ -9,6 +9,7 @@ import Contact from './components/ContactUs/ContactUs.jsx';
 import SignIn from './pages/SignIn/SignIn.jsx';
 import SignUp from './pages/SignUp/SignUp.jsx';
 
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -43,6 +44,7 @@ const router = createBrowserRouter([
     path: "/signup",
     element: <SignUp />,
   },
+
   
 
 ]);
