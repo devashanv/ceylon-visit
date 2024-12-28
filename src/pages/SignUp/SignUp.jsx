@@ -12,7 +12,7 @@ function SignUp() {
   return (
     <>
       <header>
-        <NavBar />
+        <NavBar page="signup"/>
       </header>
 
       {/* sign in form */}
