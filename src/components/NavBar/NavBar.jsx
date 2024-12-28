@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 
-function NavBar() {
+function NavBar(prop) {
     //toggle menue
     const [isMenuToggle, setisMenuToggle] = useState(false);
     const openMenu = () => {
@@ -59,49 +59,30 @@ function NavBar() {
                     lg:flex-row
                     lg:pl-0
                     lg:justify-between" id="nav-links">
-                    <li className="py-2
-                        pl-5
-                        hover:text-[#2E9B85]
-                        hover:bg-ternary/[0.3]
-                        hover:cursor-pointer
-                        hover:rounded-lg
-                        lg:px-3">
+
+                    <li className={(prop.page == "home" ? 
+                        "py-2 pl-5 font-semibold text-[#2E9B85] bg-ternary/[0.3] cursor-pointer rounded-lg lg:px-3" : 
+                        "py-2 pl-5 font-semibold hover:text-[#2E9B85] hover:bg-ternary/[0.3] hover:cursor-pointer hover:rounded-lg lg:px-3")}>
                         <Link to="/">Home</Link>
                     </li>
-                    <li className="py-2
-                        pl-5
-                        hover:text-[#2E9B85]
-                        hover:bg-ternary/[0.3]
-                        hover:cursor-pointer
-                        hover:rounded-lg
-                        lg:px-3">
+                    <li className={(prop.page == "services" ? 
+                        "py-2 pl-5 font-semibold text-[#2E9B85] bg-ternary/[0.3] cursor-pointer rounded-lg lg:px-3" : 
+                        "py-2 pl-5 font-semibold hover:text-[#2E9B85] hover:bg-ternary/[0.3] hover:cursor-pointer hover:rounded-lg lg:px-3")}>
                         <Link to="/services">Services</Link>
                     </li>
-                    <li className="py-2
-                        pl-5
-                        hover:text-[#2E9B85]
-                        hover:bg-ternary/[0.3]
-                        hover:cursor-pointer
-                        hover:rounded-lg
-                        lg:px-3">
+                    <li className={(prop.page == "about" ? 
+                        "py-2 pl-5 font-semibold text-[#2E9B85] bg-ternary/[0.3] cursor-pointer rounded-lg lg:px-3" : 
+                        "py-2 pl-5 font-semibold hover:text-[#2E9B85] hover:bg-ternary/[0.3] hover:cursor-pointer hover:rounded-lg lg:px-3")}>
                         <Link to="/about">About</Link>
                     </li>
-                    <li className="py-2
-                        pl-5
-                        hover:text-[#2E9B85]
-                        hover:bg-ternary/[0.3]
-                        hover:cursor-pointer
-                        hover:rounded-lg
-                        lg:px-3">
+                    <li className={(prop.page == "programs" ? 
+                        "py-2 pl-5 font-semibold text-[#2E9B85] bg-ternary/[0.3] cursor-pointer rounded-lg lg:px-3" : 
+                        "py-2 pl-5 font-semibold hover:text-[#2E9B85] hover:bg-ternary/[0.3] hover:cursor-pointer hover:rounded-lg lg:px-3")}>
                         <Link to="/programs">Program</Link>
                     </li>
-                    <li className="py-2
-                        pl-5
-                        hover:text-[#2E9B85]
-                        hover:bg-ternary/[0.3]
-                        hover:cursor-pointer
-                        hover:rounded-lg
-                        lg:px-3">
+                    <li className={(prop.page == "contact" ? 
+                        "py-2 pl-5 font-semibold text-[#2E9B85] bg-ternary/[0.3] cursor-pointer rounded-lg lg:px-3" : 
+                        "py-2 pl-5 font-semibold hover:text-[#2E9B85] hover:bg-ternary/[0.3] hover:cursor-pointer hover:rounded-lg lg:px-3")}>
                         <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
