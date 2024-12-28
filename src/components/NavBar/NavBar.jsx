@@ -98,18 +98,8 @@ function NavBar(prop) {
                     flex
                     justify-center
                     items-center">
-                    <button className="w-20
-                        bg-primary
-                        rounded-lg
-                        text-secondary
-                        text-xs
-                        py-2
-                        md:py-2
-                        md:w-full
-                        lg:py-2
-                        lg:w-full
-                        lg:text-base
-                        hover:bg-[#2E9B85]">
+                    <button className={(prop.page == "signin" || prop.page == "signup" ? "hidden" :
+                    "block w-20 bg-primary rounded-lg text-secondary text-xs py-2 md:py-2 md:w-full lg:py-2 lg:w-full lg:text-base hover:bg-[#2E9B85]")}>
                         Sign In
                     </button>
                 </Link>

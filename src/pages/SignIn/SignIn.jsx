@@ -10,7 +10,7 @@ function SignIn() {
   return (
     <>
       <header>
-        <NavBar />
+        <NavBar page="signin"/>
       </header>
 
       {/* sign in form */}
