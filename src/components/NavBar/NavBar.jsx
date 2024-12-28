@@ -93,7 +93,7 @@ function NavBar() {
                         hover:cursor-pointer
                         hover:rounded-lg
                         lg:px-3">
-                        <Link to="/updates">Updates</Link>
+                        <Link to="/programs">Program</Link>
                     </li>
                     <li className="py-2
                         pl-5
@@ -112,20 +112,26 @@ function NavBar() {
                 flex
                 justify-center
                 items-center">
-                <button className="w-16
-                    bg-primary
-                    rounded-lg
-                    text-secondary
-                    text-[10px]
-                    py-1
-                    md:py-2
-                    md:w-full
-                    lg:py-2
-                    lg:w-full
-                    lg:text-base
-                    hover:bg-[#2E9B85]">
-                    Sign In
-                </button>
+                <Link to="/signin"
+                className="w-24
+                    flex
+                    justify-center
+                    items-center">
+                    <button className="w-20
+                        bg-primary
+                        rounded-lg
+                        text-secondary
+                        text-xs
+                        py-2
+                        md:py-2
+                        md:w-full
+                        lg:py-2
+                        lg:w-full
+                        lg:text-base
+                        hover:bg-[#2E9B85]">
+                        Sign In
+                    </button>
+                </Link>
             </div>
 
             {/* btn menu */}
@@ -197,7 +203,7 @@ function NavBar() {
                             hover:bg-ternary/[0.3]
                             hover:cursor-pointer
                             hover:rounded-lg">
-                            <Link to="/updates">Updates</Link>
+                            <Link to="/programs">Programs</Link>
                         </li>
                         <li className="py-2
                             pl-5
