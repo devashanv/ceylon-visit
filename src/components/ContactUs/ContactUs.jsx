@@ -13,7 +13,7 @@ function ContactUs() {
   return (
     <>
       <header>
-        <NavBar />
+        <NavBar page="contact"/>
       </header>
 
       <main className="mt-10 text-mainfont">

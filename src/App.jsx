@@ -113,7 +113,7 @@ function App() {
   return (
     <>
       <header>
-        <NavBar/>
+        <NavBar page="home"/>
       </header>
       
       <main>

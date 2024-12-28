@@ -6,7 +6,7 @@ function programs() {
   return (
     <>
         <header>
-            <NavBar/>
+            <NavBar page="programs"/>
         </header>
 
         <main>Programs</main>

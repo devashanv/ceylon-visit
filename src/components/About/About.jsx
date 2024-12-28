@@ -37,7 +37,7 @@ function About() {
   return (
     <>
       <header>
-        <NavBar/>
+        <NavBar page="about"/>
       </header>
       
       <main className="mt-10 text-mainfont">

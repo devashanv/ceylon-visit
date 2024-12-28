@@ -14,7 +14,7 @@ function Services() {
   return (
     <>
       <header>
-        <NavBar/>
+        <NavBar page="services"/>
       </header>
 
       <main className="mt-10 text-mainfont">
