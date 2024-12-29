@@ -1,10 +1,9 @@
 import React from 'react'
-import './Services.css';
-import NavBar from '../NavBar/NavBar';
-import Footer from '../Footer/Footer';
+import NavBar from '../components/NavBar/NavBar';
+import Footer from '../components/Footer/Footer';
 import { Link } from 'react-router-dom';
 
-import ServiceBanner from '../../assets/services-banner.svg'
+import ServiceBanner from '../assets/services-banner.svg'
 import { FaPlaneDeparture } from "react-icons/fa";
 import { FaHotel, FaTaxi , FaPersonHiking } from "react-icons/fa6";
 import { GiMeditation, GiForestCamp, GiElephant } from "react-icons/gi";

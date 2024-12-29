@@ -1,8 +1,8 @@
 import React from 'react'
-import NavBar from '../NavBar/NavBar';
-import Footer from '../Footer/Footer';
+import NavBar from '../components/NavBar/NavBar';
+import Footer from '../components/Footer/Footer';
 
-import AboutBanner from '../../assets/about-banner.svg';
+import AboutBanner from '../assets/about-banner.svg';
 
 function About() {
   const certifiItems = [
