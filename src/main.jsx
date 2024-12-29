@@ -8,6 +8,7 @@ import Programs from './pages/programs.jsx';
 import Contact from './pages/ContactUs.jsx';
 import SignIn from './pages/SignIn/SignIn.jsx';
 import SignUp from './pages/SignUp/SignUp.jsx';
+import Dashboard from './pages/Dashboard.jsx';
 
 
 import {
@@ -44,8 +45,10 @@ const router = createBrowserRouter([
     path: "/signup",
     element: <SignUp />,
   },
-
-  
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
+  },
 
 ]);
 

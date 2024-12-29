@@ -56,11 +56,13 @@ function SignIn() {
                   </Link>
                 </div>
 
-                <button
-                  type="submit"
-                  className="bg-primary rounded-lg text-xs text-secondary w-full py-2 mt-3 flex justify-center items-center gap-1 font-medium sm:px-6 sm:py-2 sm:text-lg lg:mt-6 lg:text-base lg:py-2 lg:px-12 hover:bg-[#2E9B85] lg:font-semibold hover:transition-all hover:duration-700">
-                  Sign In
-                </button>
+                <Link to="/dashboard">
+                  <button
+                    type="submit"
+                    className="bg-primary rounded-lg text-xs text-secondary w-full py-2 mt-3 flex justify-center items-center gap-1 font-medium sm:px-6 sm:py-2 sm:text-lg lg:mt-6 lg:text-base lg:py-2 lg:px-12 hover:bg-[#2E9B85] lg:font-semibold hover:transition-all hover:duration-700">
+                    Sign In
+                  </button>
+                </Link>
               </form>                
             </div>
 
