@@ -1,4 +1,5 @@
 import React from 'react';
+import ChatBot from '../components/ChatBot.jsx/ChatBot';
 
 import DashbordNavBar from '../components/DashboardNavBar/DashbordNavBar';
 import BottomNavBar from '../components/BottomNavBar/BottomNavBar';
@@ -14,7 +15,7 @@ function Dashboard() {
             className="flex flex-col justify-center items-center">
             <BottomNavBar />
 
-
+            <ChatBot />
         </main>
     </>
   )
