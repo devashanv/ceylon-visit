@@ -132,7 +132,7 @@ function DashbordNavBar() {
               <li
                 className="flex group hover:text-[#2E9B85] hover:bg-ternary/[0.3] hover:cursor-pointer hover:rounded-lg">
                 <Link
-                  to="/dashboard"
+                  to="/signin"
                   className="rounded-bl-lg w-full py-2 pl-5 gap-2 flex flex-row items-center justify-start">
                   <IoLogOut className="w-4 h-4 text-[#555758]/[0.4] group-hover:text-[#2E9B85]" />
                   <p className="text-base font-bold text-[#555758]/[0.4] group-hover:text-[#2E9B85]">
@@ -140,7 +140,6 @@ function DashbordNavBar() {
                   </p>
                 </Link>
               </li>
-
             </ul>
           </div>
         ) : null}
