@@ -19,7 +19,7 @@ function DashbordNavBar() {
 
   return (
     <>
-      <nav className="text-mainfont bg-primary/[0.5] h-14 lg:h-16 text-base shadow flex justify-between items-center px-3 py-0 lg:px-10 lg:py-2 ">
+      <nav className="text-mainfont z-50 bg-primary/[0.5] h-14 lg:h-16 text-base shadow flex justify-between items-center px-3 py-0 lg:px-10 lg:py-2 ">
         {/* profile */}
         <div className="w-auto flex justify-center items-center gap-5">
           <div className="bg-primary w-12 h-10 lg:w-14 lg:h-12 rounded-full flex justify-center items-center">
@@ -29,7 +29,7 @@ function DashbordNavBar() {
               className="w-10 h-8 lg:w-12 lg:h-10 rounded-full object-cover object-top bg-center"
             />
           </div>
-          <p className="text-sm ml-[-10px] lg:text-lg font-bold">
+          <p className="text-xs ml-[-10px] lg:text-lg font-bold">
             Peterson Wich
           </p>
 
@@ -65,7 +65,7 @@ function DashbordNavBar() {
         {/* toggle menu */}
         {isMenuToggle ? (
           <div
-            className="absolute shadow-card w-3/4 
+            className="absolute bg-backgbround shadow-card w-3/4 
             top-14 right-0 z-50 rounded-lg lg:hidden transition-all duration-1000 ease-in delay-150">
             <ul
               className="w-full font-semibold flex flex-col gap-1 divide-y-2 divide-ternary/[0.2]">

@@ -53,7 +53,7 @@ function ProgramsTab() {
 
             <div className="bg-ternary/[0.2] max-h-[40rem] p-5 flex flex-col gap-3 overflow-y-auto lg:max-h-[44rem] lg:gap-5">
                 {(toggleTab === 1 ? <WellnesPrograms /> : 
-                    toggleTab === 2 ?               <EntertainmentPrograms /> : 
+                    toggleTab === 2 ? <EntertainmentPrograms /> : 
                     toggleTab === 3 ? <CulturalPrograms /> : <SportPrograms />)
                 }
             </div>

@@ -5,7 +5,7 @@ function ChatBot() {
   return (
     <>
         <div 
-            className="w-full top-24 fixed">
+            className="w-full mt-10">
 
             {/* chat prompt */}
             <div 
