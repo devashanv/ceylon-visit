@@ -1,4 +1,5 @@
 import React from 'react';
+import './BottomNavBar.css';
 import { Link } from 'react-router-dom';
 import { AiFillHome } from "react-icons/ai";
 import { FaPlaneDeparture } from "react-icons/fa";
@@ -11,7 +12,7 @@ function BottomNavBar() {
   return (
     <>
         <nav
-            className="bg-backgbround shadow-card w-5/6 bottom-10 fixed py-2 rounded-lg">
+            className="bg-glass shadow-card w-full sm:w-5/6 lg:w-5/6 bottom-0 sm:bottom-5 lg:bottom-10 fixed py-2 rounded-lg">
             <ul
                 className="flex w-full justify-between px-5">
                 <li>
