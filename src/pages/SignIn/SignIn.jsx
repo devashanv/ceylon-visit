@@ -70,7 +70,7 @@ function SignIn() {
               <p className="text-xs lg:text-sm text-[#555758] font-semibold">
                 A new user? 
                 <Link to="/signup"
-                className="text-[#2E9B85] underline font-bold ml-1 hover:text-primary">Sign Up</Link>
+                className="text-[#2E9B85] underline font-bold ml-1 hover:text-primary">Register</Link>
               </p>
             </div>
           </section>

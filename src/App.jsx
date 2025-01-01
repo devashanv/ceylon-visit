@@ -310,7 +310,7 @@ function App() {
             <p className="text-[#7B7B7B] font-semibold text-lg">our unique values for you</p>
           </section>
 
-          <section className="px-4 flex flex-col sm:flex-row sm:gap-6 lg:px-40">
+          <section className="bg-ternary/[0.2] py-2 px-4 flex flex-col sm:flex-row sm:gap-6 lg:px-40">
               <article className="sm:w-1/2 sm:px-5 text-[#555758]"> 
                 <p className="text-sm sm:text-sm sm:pt-5  lg:text-base font-semibold">
                   <p className="mb-5">
