@@ -14,8 +14,8 @@ function SignIn() {
       </header>
 
       {/* sign in form */}
-      <main className="mt-20">
-        <div className="bg-backgbround py-8 lg:py-0 w-5/6 sm:w-2/3 lg:w-3/5 mx-auto flex h-auto shadow-card rounded-lg ">
+      <main className="mt-5 lg:mt-20">
+        <div className="bg-backgbround py-3 lg:py-0 w-5/6 sm:w-2/3 lg:w-3/5 mx-auto flex h-auto shadow-card rounded-lg ">
           <section className="hidden lg:block lg:w-2/5">
             <img src={SignInBanner} 
               alt="Signin banner image"

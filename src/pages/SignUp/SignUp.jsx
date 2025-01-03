@@ -21,7 +21,7 @@ function SignUp() {
           <section className="hidden lg:block lg:w-2/5">
             <img src={SignUpBanner} 
                 alt="Signin banner image"
-                className="h-full object-cover rounded-l-lg"/>
+                className="h-[35rem] object-cover rounded-l-lg"/>
           </section>
 
           <section className="w-full lg:w-3/5 flex gap-8 flex-col justify-center items-center pt-0 lg:pt-5 py-3">
@@ -41,21 +41,6 @@ function SignUp() {
             <div className="mt-[-10px] w-5/6 lg:w-2/3">
               <form action=""
                   className="flex flex-col gap-2 lg:gap-">
-                <input
-                  type="text"
-                  name="userFirstName"
-                  id="user_first_name"
-                  placeholder="enter first name"
-                  className="w-full text-sm lg:text-base py-[6px] px-2 rounded-lg border-2 border-mainfont/[0.6] text-mainfont lg:font-semibold focus:ring-1  focus:ring-mainfont/[0.2] focus:outline-none focus:border-mainfont/[0.9] placeholder:text-[#949494]/[0.7]
-                  placeholder:text-xs lg:placeholder:text-sm"/>
-
-                <input
-                  type="text"
-                  name="userLastName"
-                  id="user_last_name"
-                  placeholder="enter last name"
-                  className="w-full text-sm lg:text-base py-[6px] px-2 rounded-lg border-2 border-mainfont/[0.6] text-mainfont lg:font-semibold focus:ring-1  focus:ring-mainfont/[0.2] focus:outline-none focus:border-mainfont/[0.9] placeholder:text-[#949494]/[0.7] placeholder:text-xs lg:placeholder:text-sm mt-3"/>
-
                 <input
                   type="text"
                   name="userEmail"
@@ -102,7 +87,7 @@ function SignUp() {
       </main>
 
       {/* footer section */}
-      <div className="bg-primary mt-20">
+      <div className="bg-primary mt-24">
         <Footer />
       </div>
     </>
