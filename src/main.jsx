@@ -10,6 +10,7 @@ import SignIn from './pages/SignIn/SignIn.jsx';
 import SignUp from './pages/SignUp/SignUp.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import ForgotPassword from './pages/ForgotPassword.jsx';
+import ResetPassword from './pages/ResetPassword.jsx';
 
 
 import {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: "/forgotpswd",
     element: <ForgotPassword />,
+  },
+  {
+    path: "/resetpswd",
+    element: <ResetPassword />,
   },
 
 ]);
