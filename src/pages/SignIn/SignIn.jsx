@@ -50,7 +50,7 @@ function SignIn() {
                     placeholder:text-xs lg:placeholder:text-sm mt-3"/>
 
                 <div className="text-right">
-                  <Link to="/forgot password"
+                  <Link to="/forgotpswd"
                     className="text-[#555758]/[0.6] text-xs lg:text-sm font-semibold hover:text-[#555758]">
                       Forgot password?
                   </Link>

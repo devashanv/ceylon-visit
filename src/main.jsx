@@ -9,6 +9,7 @@ import Contact from './pages/ContactUs.jsx';
 import SignIn from './pages/SignIn/SignIn.jsx';
 import SignUp from './pages/SignUp/SignUp.jsx';
 import Dashboard from './pages/Dashboard.jsx';
+import ForgotPassword from './pages/ForgotPassword.jsx';
 
 
 import {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
+  },
+  {
+    path: "/forgotpswd",
+    element: <ForgotPassword />,
   },
 
 ]);
