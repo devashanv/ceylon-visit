@@ -24,7 +24,7 @@ function DashbordNavBar() {
         <div className="w-auto flex justify-center items-center gap-5">
           <div className="bg-primary w-12 h-10 lg:w-14 lg:h-12 rounded-full flex justify-center items-center">
             <img
-              src="profile.jpg"
+              src="/profile.jpg"
               alt="profile image"
               className="w-10 h-8 lg:w-12 lg:h-10 rounded-full object-cover object-top bg-center"
             />
