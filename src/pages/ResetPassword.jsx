@@ -25,7 +25,7 @@ function ResetPassword() {
                     id="new_password"
                     placeholder="type new password"
                     className="w-full lg:w-2/3 text-sm lg:text-base py-[6px] px-2 rounded-lg border-2 border-mainfont/[0.6] text-mainfont lg:font-semibold focus:ring-1  focus:ring-mainfont/[0.2] focus:outline-none focus:border-mainfont/[0.9] placeholder:text-[#949494]/[0.7]
-                                placeholder:text-xs lg:placeholder:text-sm"
+                    placeholder:text-xs lg:placeholder:text-sm"
                     />
 
                     <input
@@ -36,12 +36,12 @@ function ResetPassword() {
                     className="w-full lg:w-2/3 text-sm lg:text-base py-[6px] px-2 rounded-lg border-2 border-mainfont/[0.6] text-mainfont lg:font-semibold focus:ring-1  focus:ring-mainfont/[0.2] focus:outline-none focus:border-mainfont/[0.9] placeholder:text-[#949494]/[0.7]
                                 placeholder:text-xs lg:placeholder:text-sm"
                     />
-
-                    <Link to="/dashboard">
+                    
+                    {/* todo: password reset */}
+                    <Link to="">
                     <button
                         type="submit"
-                        className="bg-primary rounded-lg text-xs text-secondary w-full lg:w-1/3 py-2 mt-3 flex justify-center items-center gap-1 font-medium sm:px-6 sm:py-2 sm:text-lg lg:mt-6 lg:text-base lg:py-2 lg:px-12 hover:bg-[#2E9B85] lg:font-semibold hover:transition-all hover:duration-700"
-                    >
+                        className="bg-primary rounded-lg text-xs text-secondary w-full lg:w-1/3 py-2 mt-3 flex justify-center items-center gap-1 font-medium sm:px-6 sm:py-2 sm:text-lg lg:mt-6 lg:text-base lg:py-2 lg:px-12 hover:bg-[#2E9B85] lg:font-semibold hover:transition-all hover:duration-700">
                         Reset
                     </button>
                     </Link>
