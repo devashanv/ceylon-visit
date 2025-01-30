@@ -70,7 +70,7 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
                 flex\r
                 sm:w-3/4\r
                 lg:w-1/3\r
-                lg:flex`,children:o.jsx("img",{src:"logo.svg",alt:"Ceylon Visit logo",className:`w-36\r
+                lg:flex`,children:o.jsx("img",{src:"/logo.svg",alt:"Ceylon Visit logo",className:`w-36\r
                     lg:w-44`})}),o.jsx("div",{className:`hidden absolute \r
                 bg-slate-100\r
                 shadow \r
