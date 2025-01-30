@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 
-function NavBar() {
+function NavBar(prop) {
     //toggle menue
     const [isMenuToggle, setisMenuToggle] = useState(false);
     const openMenu = () => {
@@ -59,49 +59,30 @@ function NavBar() {
                     lg:flex-row
                     lg:pl-0
                     lg:justify-between" id="nav-links">
-                    <li className="py-2
-                        pl-5
-                        hover:text-[#2E9B85]
-                        hover:bg-ternary/[0.3]
-                        hover:cursor-pointer
-                        hover:rounded-lg
-                        lg:px-3">
+
+                    <li className={(prop.page == "home" ? 
+                        "py-2 pl-5 font-semibold text-[#2E9B85] bg-ternary/[0.3] cursor-pointer rounded-lg lg:px-3" : 
+                        "py-2 pl-5 font-semibold hover:text-[#2E9B85] hover:bg-ternary/[0.3] hover:cursor-pointer hover:rounded-lg lg:px-3")}>
                         <Link to="/">Home</Link>
                     </li>
-                    <li className="py-2
-                        pl-5
-                        hover:text-[#2E9B85]
-                        hover:bg-ternary/[0.3]
-                        hover:cursor-pointer
-                        hover:rounded-lg
-                        lg:px-3">
+                    <li className={(prop.page == "services" ? 
+                        "py-2 pl-5 font-semibold text-[#2E9B85] bg-ternary/[0.3] cursor-pointer rounded-lg lg:px-3" : 
+                        "py-2 pl-5 font-semibold hover:text-[#2E9B85] hover:bg-ternary/[0.3] hover:cursor-pointer hover:rounded-lg lg:px-3")}>
                         <Link to="/services">Services</Link>
                     </li>
-                    <li className="py-2
-                        pl-5
-                        hover:text-[#2E9B85]
-                        hover:bg-ternary/[0.3]
-                        hover:cursor-pointer
-                        hover:rounded-lg
-                        lg:px-3">
+                    <li className={(prop.page == "about" ? 
+                        "py-2 pl-5 font-semibold text-[#2E9B85] bg-ternary/[0.3] cursor-pointer rounded-lg lg:px-3" : 
+                        "py-2 pl-5 font-semibold hover:text-[#2E9B85] hover:bg-ternary/[0.3] hover:cursor-pointer hover:rounded-lg lg:px-3")}>
                         <Link to="/about">About</Link>
                     </li>
-                    <li className="py-2
-                        pl-5
-                        hover:text-[#2E9B85]
-                        hover:bg-ternary/[0.3]
-                        hover:cursor-pointer
-                        hover:rounded-lg
-                        lg:px-3">
-                        <Link to="/updates">Updates</Link>
+                    <li className={(prop.page == "programs" ? 
+                        "py-2 pl-5 font-semibold text-[#2E9B85] bg-ternary/[0.3] cursor-pointer rounded-lg lg:px-3" : 
+                        "py-2 pl-5 font-semibold hover:text-[#2E9B85] hover:bg-ternary/[0.3] hover:cursor-pointer hover:rounded-lg lg:px-3")}>
+                        <Link to="/programs">Program</Link>
                     </li>
-                    <li className="py-2
-                        pl-5
-                        hover:text-[#2E9B85]
-                        hover:bg-ternary/[0.3]
-                        hover:cursor-pointer
-                        hover:rounded-lg
-                        lg:px-3">
+                    <li className={(prop.page == "contact" ? 
+                        "py-2 pl-5 font-semibold text-[#2E9B85] bg-ternary/[0.3] cursor-pointer rounded-lg lg:px-3" : 
+                        "py-2 pl-5 font-semibold hover:text-[#2E9B85] hover:bg-ternary/[0.3] hover:cursor-pointer hover:rounded-lg lg:px-3")}>
                         <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
@@ -112,20 +93,16 @@ function NavBar() {
                 flex
                 justify-center
                 items-center">
-                <button className="w-16
-                    bg-primary
-                    rounded-lg
-                    text-secondary
-                    text-[10px]
-                    py-1
-                    md:py-2
-                    md:w-full
-                    lg:py-2
-                    lg:w-full
-                    lg:text-base
-                    hover:bg-[#2E9B85]">
-                    Sign In
-                </button>
+                <Link to="/signin"
+                className="w-24
+                    flex
+                    justify-center
+                    items-center">
+                    <button className={(prop.page == "signin" || prop.page == "signup" ? "hidden" :
+                    "block w-20 bg-primary rounded-lg text-secondary text-xs py-2 md:py-2 md:w-full lg:py-2 lg:w-full lg:text-base hover:bg-[#2E9B85]")}>
+                        Sign In
+                    </button>
+                </Link>
             </div>
 
             {/* btn menu */}
@@ -197,7 +174,7 @@ function NavBar() {
                             hover:bg-ternary/[0.3]
                             hover:cursor-pointer
                             hover:rounded-lg">
-                            <Link to="/updates">Updates</Link>
+                            <Link to="/programs">Programs</Link>
                         </li>
                         <li className="py-2
                             pl-5

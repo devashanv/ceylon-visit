@@ -1,8 +1,56 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
 
 .card-hover:hover{
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    padding: 0 25px;
-    transition: all 0.2s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    transition: all 0.3s ease-out;
     cursor: pointer;
+}
+
+.banner-font{
+    font-family: "Arima", serif;
+}
+
+/* slicks override styles */
+.slick-slide > div{
+    margin: 0 2rem 2rem 2rem;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: #616161 !important;
+}
+
+.slick-dots li button {
+    width: 15px !important;
+    height: 6px !important;
+    background-color: #b4b4b4 !important;
+    padding: 0.1rem !important;
+    margin-top: 0rem !important;
+    transition: all 0.4s ease-in-out;
+    border-radius: 10px !important;
+}
+
+.slick-dots li button:before {
+    content: ' ' !important;
+}
+
+.slick-dots li.slick-active button{
+    width: 20px !important;
+    background-color: #F9D264 !important;
+}
+
+.slick-dots li{
+    margin: 5px !important;
+}
+
+
+@media (min-width: 768px) { 
+    .slick-slide > div{
+        margin: 0 1rem 1rem 1rem;
+    }
+}
+
+@media (min-width: 640px) { 
+    .slick-slide > div{
+        margin: 0 1rem 2rem 1rem;
+    }
 }
