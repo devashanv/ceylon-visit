@@ -28,7 +28,7 @@ function NavBar(prop) {
                 sm:w-3/4
                 lg:w-1/3
                 lg:flex">
-                <img src="logo.svg" alt="Ceylon Visit logo" className="w-36
+                <img src="/logo.svg" alt="Ceylon Visit logo" className="w-36
                     lg:w-44"/>
             </div>
 
