@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    basename: '/ceylon-visit'
+    basename: '/ceylon-visit/'
   },
   {
     path: "/services",
