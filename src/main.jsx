@@ -65,8 +65,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter>
       <RouterProvider router={router} basename="/ceylon-visit/" />
-    </HashRouter>
   </StrictMode>,
 )
