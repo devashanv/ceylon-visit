@@ -28,7 +28,7 @@ function NavBar(prop) {
                 sm:w-3/4
                 lg:w-1/3
                 lg:flex">
-                <img src={`${process.env.PUBLIC_URL}/logo.svg`} alt="Ceylon Visit logo" className="w-36
+                <img src="https://devashanv.github.io/ceylon-visit/logo.svg" alt="Ceylon Visit logo" className="w-36
                     lg:w-44"/>
             </div>
 
