@@ -18,37 +18,37 @@ function App() {
   const updatesCardItems = [
     {
       id: "1",
-      image: "/card-image/image-1.jpg",
+      image: `${process.env.PUBLIC_URL}/card-image/image-1.jpg`,
       title: "Kandy 'Dalada Perahara' 2024.",
       description: "World's cultural festival.Time Schedule published.",
     },
     {
       id: "2",
-      image: "/card-image/image-2.jpg",
+      image: `${process.env.PUBLIC_URL}/card-image/image-2.jpg`,
       title: "Colombo Vesak Festival May 2024.",
       description: "The colourfull festival are announced. Time Schedule published.",
     },
     {
       id: "3",
-      image: "/card-image/image-3.jpg",
+      image: `${process.env.PUBLIC_URL}/card-image/image-3.jpg`,
       title: "Tourism program In Sigiriya.",
       description: "Newly introduced program for tourism by Sri Lanka government. Packages and programs released.",
     },
     {
       id: "4",
-      image: "/card-image/image-4.jpg",
+      image: `${process.env.PUBLIC_URL}/card-image/image-4.jpg`,
       title: "Yala Adventure Safari Program.",
       description: "Newly introduced program for tourism by Sri Lanka government. Packages and programs released.",
     },
     {
       id: "5",
-      image: "/card-image/image-5.jpg",
+      image: `${process.env.PUBLIC_URL}/card-image/image-5.jpg`,
       title: "Nuwara Eliya New Year Festival.",
       description: "Newly introduced program for tourism by Sri Lanka government. Time Schedule published",
     },
     {
       id: "6",
-      image: "/card-image/image-6.jpg",
+      image:`${process.env.PUBLIC_URL}/card-image/image-6.jpg`,
       title: "Ella Special Tourism Program.",
       description: "Newly introduced program for tourism by Sri Lanka government. Packages and programs released.",
     },
