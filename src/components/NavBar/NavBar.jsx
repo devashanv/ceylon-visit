@@ -20,8 +20,7 @@ function NavBar(prop) {
             px-5
             py-2
             lg:px-10
-            lg:py-2
-            fixed">
+            lg:py-2">
 
             {/* logo */}
             <div className="w-2/3
