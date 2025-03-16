@@ -66,7 +66,8 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
             px-5\r
             py-2\r
             lg:px-10\r
-            lg:py-2`,children:[o.jsx("div",{className:`w-2/3\r
+            lg:py-2\r
+            fixed`,children:[o.jsx("div",{className:`w-2/3\r
                 flex\r
                 sm:w-3/4\r
                 lg:w-1/3\r
