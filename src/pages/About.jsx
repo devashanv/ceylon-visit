@@ -9,27 +9,27 @@ function About() {
     {
       title: "Adventure Tourism",
       code: "ISO 211001",
-      image: `${process.env.PUBLIC_URL}/certificate/certi-1.svg`,
+      image: "https://devashanv.github.io/ceylon-visit/certificate/certi-1.svg",
     },
     {
       title: "Health And Safety",
       code: "ISO 45001",
-      image: `${process.env.PUBLIC_URL}/certificate/certi-2.svg`,
+      image: "https://devashanv.github.io/ceylon-visit/certificate/certi-2.svg",
     },
     {
       title: "Quality",
       code: "ISO 9001 ",
-      image: `${process.env.PUBLIC_URL}/certificate/certi-3.svg`,
+      image: "https://devashanv.github.io/ceylon-visit/certificate/certi-3.svg",
     },
     {
       title: "Health And Safety",
       code: "ISO 211001",
-      image: `${process.env.PUBLIC_URL}/certificate/certi-4.svg`,
+      image: "https://devashanv.github.io/ceylon-visit/certificate/certi-4.svg",
     },
     {
       title: "Health And Safety",
       code: "ISO 45001",
-      image: `${process.env.PUBLIC_URL}/certificate/certi-5.svg`,
+      image: "https://devashanv.github.io/ceylon-visit/certificate/certi-5.svg",
     },
        
   ]
